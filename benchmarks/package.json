@@ -1,0 +1,11 @@
+{
+  "name": "@vanilla-extract/benchmarks",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@vanilla-extract/css": "workspace:^",
+    "@vanilla-extract/integration": "workspace:^",
+    "tinybench": "^2.9.0",
+    "tsx": "^4.7.2"
+  }
+}

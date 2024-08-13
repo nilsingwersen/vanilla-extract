@@ -87,6 +87,21 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(@types/node@20.9.5)(jsdom@20.0.3)(terser@5.26.0)
 
+  benchmarks:
+    devDependencies:
+      '@vanilla-extract/css':
+        specifier: workspace:^
+        version: link:../packages/css
+      '@vanilla-extract/integration':
+        specifier: workspace:^
+        version: link:../packages/integration
+      tinybench:
+        specifier: ^2.9.0
+        version: 2.9.0
+      tsx:
+        specifier: ^4.7.2
+        version: 4.7.2
+
   examples/next:
     dependencies:
       next:
@@ -10563,8 +10578,8 @@ packages:
   timsort@0.3.0:
     resolution: {integrity: sha512-qsdtZH+vMoCARQtyod4imc2nIJwg9Cc7lPRrw9CzF8ZKR0khdr8+2nX80PBhET3tcyTtJDxAffGh2rXH4tyU8A==}
 
-  tinybench@2.5.1:
-    resolution: {integrity: sha512-65NKvSuAVDP/n4CqH+a9w2kTlLReS9vhsAP06MWx+/89nMinJyB2icyl58RIcqCmIggpojIGeuJGhjU1aGMBSg==}
+  tinybench@2.9.0:
+    resolution: {integrity: sha512-0+DUvqWMValLmha6lr4kD8iAMK1HzV0/aKnCtWb9v9641TnP/MFb7Pc2bxoxQjTXAErryXVgUOfv2YqNllqGeg==}
 
   tinypool@0.8.4:
     resolution: {integrity: sha512-i11VH5gS6IFeLY3gMBQ00/MmLncVP7JLXOw1vlgkytLmJK7QnEr7NXf0LBdxfmNPAeyetukOk0bOYrJrFGjYJQ==}
@@ -23336,7 +23351,7 @@ snapshots:
 
   timsort@0.3.0: {}
 
-  tinybench@2.5.1: {}
+  tinybench@2.9.0: {}
 
   tinypool@0.8.4: {}
 
@@ -24000,7 +24015,7 @@ snapshots:
       picocolors: 1.0.0
       std-env: 3.7.0
       strip-literal: 2.1.0
-      tinybench: 2.5.1
+      tinybench: 2.9.0
       tinypool: 0.8.4
       vite: 5.1.4(@types/node@20.9.5)(terser@5.26.0)
       vite-node: 1.5.0(@types/node@20.9.5)(terser@5.26.0)
